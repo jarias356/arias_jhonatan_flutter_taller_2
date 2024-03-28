@@ -1,8 +1,7 @@
+import 'package:arias_jhonatan_taller_2_flutter/ui/widgets/drawwe_menu.dart';
 import 'package:arias_jhonatan_taller_2_flutter/ui/widgets/expanded_button.dart';
 import 'package:arias_jhonatan_taller_2_flutter/ui/widgets/option_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class PracticeView extends StatelessWidget {
   const PracticeView({super.key});
@@ -15,9 +14,13 @@ class PracticeView extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.primary,
           title: const Center(
-              child: Text('Practice for test',
-                  style: TextStyle(color: Colors.white))),
+              child: Text(
+                  'Practice for test',
+                  style: TextStyle(color: Colors.white)
+              )
+          ),
         ),
+        drawer: const DrawerMenu(),
         body: ListView(
           children: [
             Padding(
@@ -75,7 +78,8 @@ class PracticeView extends StatelessWidget {
                   const Text(
                       "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."),
                   const SizedBox(height: 16),
-                  const Text("END OF APPLICATION", style: TextStyle(fontSize: 24)),
+                  const Text(
+                      "END OF APPLICATION", style: TextStyle(fontSize: 24)),
                   const SizedBox(height: 16)
                 ],
               ),
